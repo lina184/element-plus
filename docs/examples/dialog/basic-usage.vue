@@ -7,17 +7,11 @@
     v-model="dialogVisible"
     title="Tips"
     width="500"
+    close-delay="5000"
     :before-close="handleClose"
   >
     <span>This is a message</span>
-    <template #footer>
-      <div class="dialog-footer">
-        <el-button @click="dialogVisible = false">Cancel</el-button>
-        <el-button type="primary" @click="dialogVisible = false">
-          Confirm
-        </el-button>
-      </div>
-    </template>
+   
   </el-dialog>
 </template>
 
